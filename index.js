@@ -1,6 +1,6 @@
 (() => {
     document.addEventListener('DOMContentLoaded', async () => {
-        const response = await fetch('/assets/data.json');
+        const response = await fetch('/Expenses-Chart-Component/assets/data.json');
         const data = await response.json();
 
         const barDocumentFragment = new DocumentFragment();
