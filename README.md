@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []
-- Live Site URL: []
+- Solution URL: [https://www.frontendmentor.io/solutions/expenses-chart-component-i-0J6u_GmK]
+- Live Site URL: [https://d-sisovic.github.io/Expenses-Chart-Component/]
 
 ## My process
 
