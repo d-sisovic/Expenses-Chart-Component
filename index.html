@@ -13,7 +13,46 @@
 </head>
 
 <body>
-    
+    <div class="card">
+        <header class="header">
+            <div class="label">
+                <p>My balance</p>
+
+                <span>$921.48</span>
+            </div>
+
+            <img src="/assets/images/logo.svg" alt="logo">
+        </header>
+
+        <section class="body">
+            <h1>Spending - Last 7 days</h1>
+
+            <div class="chart">
+                <div class="bars" id="bars-container"></div>
+
+                <div class="labels" id="labels-container"></div>
+            </div>
+
+            <div class="line"></div>
+
+
+            <footer class="footer">
+                <div class="total">
+                    <span class="label">Total this month</span>
+
+                    <span class="value">$478.33</span>
+                </div>
+
+                <div class="percentage">
+                    <span class="value">+2.4%</span>
+
+                    <span class="label">from last month</span>
+                </div>
+            </footer>
+        </section>
+    </div>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>

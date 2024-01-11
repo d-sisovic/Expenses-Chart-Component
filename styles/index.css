@@ -27,4 +27,224 @@ img {
 @font-face {
   font-family: "DMSans-Regular";
   src: url("../assets/fonts/DMSans-Regular.ttf");
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: hsl(27, 66%, 92%);
+  padding: 6.7rem 1.6rem 0 1.6rem;
+}
+body .card {
+  width: 100%;
+}
+body .card .header {
+  display: flex;
+  border-radius: 1rem;
+  align-items: center;
+  margin-bottom: 1.6rem;
+  justify-content: space-between;
+  background: hsl(10, 79%, 65%);
+  padding: 2rem 2.4rem 2.2rem 2rem;
+}
+body .card .header .label {
+  color: #FFFFFF;
+}
+body .card .header .label p {
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
+  font-family: "DMSans-Regular";
+}
+body .card .header .label span {
+  line-height: 1.2;
+  font-size: 2.4rem;
+  font-family: "DMSans-Bold";
+}
+body .card .header img {
+  width: 6rem;
+  height: 4rem;
+}
+body .card .body {
+  border-radius: 1rem;
+  padding: 2.4rem 2rem;
+  background: #FFFFFF;
+}
+body .card .body h1 {
+  font-size: 2.4rem;
+  font-family: "DMSans-Bold";
+  color: hsl(25, 47%, 15%);
+}
+body .card .line {
+  width: 100%;
+  height: 0.2rem;
+  margin: 2.4rem 0;
+  border-radius: 1rem;
+  background-color: hsl(27, 66%, 92%);
+}
+body .card .chart {
+  gap: 1.1rem;
+  display: flex;
+  margin-top: 5.2rem;
+  flex-direction: column;
+}
+body .card .chart .bars {
+  gap: 1.2rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+body .card .chart .bars .bar {
+  width: 3.3rem;
+  height: 15rem;
+  cursor: pointer;
+  position: relative;
+  border-radius: 0.3rem;
+  background: hsl(10, 79%, 65%);
+}
+body .card .chart .bars .bar:hover {
+  background: #FF9B86;
+}
+body .card .chart .bars .bar:hover .tooltip {
+  opacity: 1;
+}
+body .card .chart .bars .bar--highest {
+  background: hsl(186, 34%, 60%);
+}
+body .card .chart .bars .bar--highest:hover {
+  background: #B4E0E5;
+}
+body .card .chart .bars .tooltip {
+  left: 50%;
+  opacity: 0;
+  top: -4.7rem;
+  padding: 0.8rem;
+  font-size: 1.8rem;
+  position: absolute;
+  border-radius: 0.5rem;
+  font-family: "DMSans-Bold";
+  transform: translateX(-50%);
+  transition: opacity 0.5s ease;
+  color: hsl(33, 100%, 98%);
+  background-color: hsl(25, 47%, 15%);
+}
+body .card .chart .labels {
+  gap: 1.2rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+body .card .chart .labels .label {
+  width: 3.3rem;
+  font-size: 1.2rem;
+  font-family: "DMSans-Regular";
+  color: hsl(28, 10%, 53%);
+}
+body .card .footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+body .card .footer .total {
+  gap: 0.4rem;
+  display: flex;
+  flex-direction: column;
+}
+body .card .footer .total .label {
+  font-size: 1.5rem;
+  font-family: "DMSans-Regular";
+  color: hsl(28, 10%, 53%);
+}
+body .card .footer .total .value {
+  font-size: 3rem;
+  font-family: "DMSans-Bold";
+  color: hsl(25, 47%, 15%);
+}
+body .card .footer .percentage {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+body .card .footer .percentage .value {
+  font-size: 1.5rem;
+  font-family: "DMSans-Bold";
+  color: hsl(25, 47%, 15%);
+}
+body .card .footer .percentage .label {
+  font-size: 1.5rem;
+  font-family: "DMSans-Regular";
+  color: hsl(28, 10%, 53%);
+}
+
+@media (min-width: 48em) {
+  body {
+    padding: 0;
+  }
+  body .card {
+    width: 54rem;
+    margin: 0 auto;
+  }
+  body .card .header {
+    height: 12.5rem;
+    border-radius: 2rem;
+    margin-bottom: 2.4rem;
+    padding: 2.7rem 3.9rem 2.5rem 3.2rem;
+  }
+  body .card .header .label p {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+  body .card .header .label span {
+    font-size: 3.2rem;
+  }
+  body .card .header img {
+    width: 7.2rem;
+    height: 4.8rem;
+  }
+  body .card .body {
+    border-radius: 2rem;
+    padding: 3.2rem 4rem 4.1rem 4rem;
+  }
+  body .card .body h1 {
+    font-size: 3.2rem;
+  }
+  body .card .line {
+    margin: 3.2rem 0;
+  }
+  body .card .chart {
+    gap: 0.8rem;
+    margin-top: 6.6rem;
+  }
+  body .card .chart .bars {
+    gap: 1.8rem;
+  }
+  body .card .chart .bars .bar {
+    width: 5rem;
+    height: 15rem;
+    border-radius: 0.5rem;
+  }
+  body .card .chart .labels {
+    gap: 1.8rem;
+  }
+  body .card .chart .labels .label {
+    width: 5rem;
+    font-size: 1.5rem;
+  }
+  body .card .footer .total {
+    gap: 0.1rem;
+  }
+  body .card .footer .total .label {
+    font-size: 1.8rem;
+  }
+  body .card .footer .total .value {
+    font-size: 4.8rem;
+  }
+  body .card .footer .percentage {
+    gap: 0.1rem;
+  }
+  body .card .footer .percentage .value,
+  body .card .footer .percentage .label {
+    font-size: 1.8rem;
+  }
 }/*# sourceMappingURL=index.css.map */
